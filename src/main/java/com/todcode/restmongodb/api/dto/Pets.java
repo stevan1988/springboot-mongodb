@@ -12,7 +12,8 @@ public class Pets {
     public String breed;
 
     // Constructors
-    public Pets() {}
+    public Pets() {
+    }
 
     public Pets(ObjectId _id, String name, String species, String breed) {
         this._id = _id;
@@ -22,15 +23,35 @@ public class Pets {
     }
 
     // ObjectId needs to be converted to string
-    public String get_id() { return _id.toHexString(); }
-    public void set_id(ObjectId _id) { this._id = _id; }
+    public String get_id() {
+        return _id.toHexString();
+    }
 
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+    public void set_id(ObjectId _id) {
+        this._id = _id;
+    }
 
-    public String getSpecies() { return species; }
-    public void setSpecies(String species) { this.species = species; }
+    public String getName() {
+        return name;
+    }
 
-    public String getBreed() { return breed; }
-    public void setBreed(String breed) { this.breed = breed; }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSpecies() {
+        return species;
+    }
+
+    public void setSpecies(String species) {
+        this.species = species;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
 }
